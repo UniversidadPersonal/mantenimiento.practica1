@@ -16,9 +16,14 @@
 -. Controlar que si hay dos con igual distancia es isosceles y todas las posibles permutaciones
 		output -> Isosceles
 
--. Caso de prueba en el que los valores que se nos dan son double.
-		output -> Exception
+-. Caso de prueba en el que se dan valores no enteros. 
+		input (1.2, 1.2, 1.2) -> Equilateral
+		input (1.2, 3.2, 4.5) -> Isosceles 
+		input (1.2, 2.3, 3.4) -> Scalene
 
 -. Caso de que todos los lados sean distintos 
 		output -> Escaleno
+
+-. Caso en el que se incluyan valores enteros y double 
+		output -> Triangulo
 

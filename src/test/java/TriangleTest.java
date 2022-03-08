@@ -75,9 +75,36 @@ class TriangleTest {
         public void testComputeReturnNotEquilateralWhenTriangleIsNotEquilateral(){
             assertNotEquals(Triangle.TriangleType.EQUILATERAL, triangulo.getType(2, 3, 4));
         }
+        @Test
+        public void testComputeReturnNotIsoscelesWhenTriangleIsNotIsosceles(){
+            assertNotEquals(Triangle.TriangleType.ISOSCELES, triangulo.getType(3, 3, 3));
+        }
+
+        @Test
+        public void testComputeReturnNotScaleneWhenTriangleIsNotIsosceles(){
+            assertNotEquals(Triangle.TriangleType.SCALENE, triangulo.getType(2.4, 3, 3));
+        }
 
 
+    @Test
+        public void testComputeReturnEquilateralWhenTriangleHasSidesWithDoubleValues(){
+            assertEquals(Triangle.TriangleType.EQUILATERAL, triangulo.getType(1.2,1.2,1.2));
+        }
 
+        @Test
+        public void testComputeReturnIsoscelesWhenTriangleHasSidesWithDoubleValues(){
+            assertEquals(Triangle.TriangleType.ISOSCELES, triangulo.getType(1.2,2.4,2.4));
+        }
+
+        @Test
+        public void testComputeReturnScaleneWhenTriangleHasSidesWithDoubleValues(){
+            assertEquals(Triangle.TriangleType.SCALENE, triangulo.getType(1.2,2.4,3.2));
+        }
+
+        @Test
+        public void testComputeReturnTriangleWhenValuesAreIntegerAndDouble(){
+            assertEquals(Triangle.TriangleType.ISOSCELES, triangulo.getType(2, 3.4, 3.4));
+        }
 
 
 }
