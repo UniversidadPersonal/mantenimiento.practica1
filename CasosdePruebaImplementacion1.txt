@@ -1,0 +1,24 @@
+-. Controlar la excepcion de que uno de los lados tiene longitud 0 
+		output -> Exception
+
+-. Caso de que todos los lados sea 0 
+		output -> Exception 
+
+-. COntrolar la excepcion de que uno de los lados tiene longitud negativa. 
+		output -> Exception
+
+-. Controlar la excepcion de que las longitudes no corresponden con un triángulo válido. 
+	      output -> Exception
+
+-. Controlar que dadas tres distancias iguales el triangulo es equilatero. 
+		output -> Equilatero
+
+-. Controlar que si hay dos con igual distancia es isosceles y todas las posibles permutaciones
+		output -> Isosceles
+
+-. Caso de prueba en el que los valores que se nos dan son double.
+		output -> Exception
+
+-. Caso de que todos los lados sean distintos 
+		output -> Escaleno
+
